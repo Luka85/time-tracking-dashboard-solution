@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Luka85/time-tracking-dashboard]
+- Solution URL: [https://github.com/Luka85/time-tracking-dashboard-solution]
 - Live Site URL: [https://luka85.github.io/time-tracking-dashboard-solution/]
 
 ## My process
