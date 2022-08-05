@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- //USER CARD -->
+    <section class="user-card">
+      <div class="user-card__info-box">
+        <img src="images/image-jeremy.png" alt="Username photo" class="user-card__img">
+        <div class="user-card__name-box">
+          <span class="span">Report for</span>
+          <h1 class=" heading-primary">Jeremy Robson</h1>
+        </div>
+      </div>
+      <ul class="user-card__stats-box">
+        <li class="user-card__stats ">
+          <a href="#" class="user-card__link user-card__link--active user-card__link--daily">Daily</a>
+        </li>
+        <li class="user-card__stats ">
+          <a href="#" class="user-card__link user-card__link--weekly">Weekly</a>
+        </li>
+        <li class="user-card__stats">
+          <a href="#" class="user-card__link user-card__link--monthly">Monthly</a>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- //CARDS -->
+
+
+    <!-- WORK -->
+    <section class="card card--work">
+      <div class="card__content">
+        <div class="card__heading-box">
+          <h2 class="heading-secondary">Work</h2>
+          <img src="images/icon-ellipsis.svg" alt="Three dots image" class="card__img">
+        </div>
+        <div class="card__hours-box">
+          <span class="card__hours card__hours--work">5hrs</span>
+          <p class="card__text  card__text--work">Last day - 7hrs</p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PLAY -->
+    <section class="card card--play">
+      <div class="card__content">
+        <div class="card__heading-box">
+          <h2 class="heading-secondary">Play</h2>
+          <img src="images/icon-ellipsis.svg" alt="Three dots image" class="card__img">
+        </div>
+        <div class="card__hours-box">
+          <span class="card__hours card__hours--play ">1hrs</span>
+          <p class=" card__text card__text--play ">Last day - 2hrs</p>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- STUDY -->
+    <section class="card card--study">
+      <div class="card__content">
+        <div class="card__heading-box">
+          <h2 class="heading-secondary">Study</h2>
+          <img src="images/icon-ellipsis.svg" alt="Three dots image" class="card__img">
+        </div>
+        <div class="card__hours-box">
+          <span class="card__hours card__hours--study ">0hrs</span>
+          <p class=" card__text card__text--study ">Last day - 1hrs</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EXERCISE -->
+    <section class="card card--exercise">
+      <div class="card__content">
+        <div class="card__heading-box">
+          <h2 class="heading-secondary">Exercise</h2>
+          <img src="images/icon-ellipsis.svg" alt="Three dots image" class="card__img">
+        </div>
+        <div class="card__hours-box">
+          <span class="card__hours card__hours--exercise ">1hrs</span>
+          <p class=" card__text card__text--exercise ">Last day - 1hrs</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SOCIAL -->
+    <section class="card card--social">
+      <div class="card__content">
+        <div class="card__heading-box">
+          <h2 class="heading-secondary">Social</h2>
+          <img src="images/icon-ellipsis.svg" alt="Three dots image" class="card__img">
+        </div>
+        <div class="card__hours-box">
+          <span class="card__hours card__hours--social ">1hrs</span>
+          <p class=" card__text card__text--social ">Last day - 3hrs</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SELFCARE -->
+    <section class="card card--selfcare">
+      <div class="card__content">
+        <div class="card__heading-box">
+          <h2 class="heading-secondary">Self Care</h2>
+          <img src="images/icon-ellipsis.svg" alt="Three dots image" class="card__img">
+        </div>
+        <div class="card__hours-box">
+          <span class="card__hours card__hours--selfcare current">0hrs</span>
+          <p class=" card__text card__text--selfcare current">Last day - 1hrs</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Luka Kikelj</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

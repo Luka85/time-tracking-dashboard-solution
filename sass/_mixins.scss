@@ -1,0 +1,60 @@
+//MEDIA QUERY MANAGER
+
+/* 
+ 0-330px PHONE-SMALLEST
+ 330-600px PHONE
+ 600-800px TABLET PORTRAIT SMALLER
+ 800px-930px TABLET PORTRAIT
+ 930px-1050px TABLET LANDSCAPE SMALLER
+ 1050px-1150px TABLET LANDSCAPE
+ 1150px + NORMAL STYLE
+
+&breakpoint argument choices:
+-phone-smallest
+-phone
+-tab-port-smaller
+-tab-port
+-tab-land-smaller
+-tab-land
+ */
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint ==phone-smallest {
+        @media only screen and (max-width:20.625em) {
+            @content; //330px, 330px/16px = 20.625em
+        }
+    }
+
+    @if $breakpoint ==phone {
+        @media only screen and (max-width:37.5em) {
+            @content; //600px, 600px/16px = 37.5em
+        }
+    }
+
+    @if $breakpoint ==tab-port-smaller {
+        @media only screen and (max-width:50em) {
+            @content; //800px, 800px/16px = 57.25em
+        }
+    }
+
+    @if $breakpoint ==tab-port {
+        @media only screen and (max-width:58.125em) {
+            @content; //930px, 930px/16px = 58.125em
+        }
+    }
+
+    @if $breakpoint ==tab-land-smaller {
+        @media only screen and (max-width:65.625em) {
+            @content; //1050px, 1050px/16px = 65.625em
+        }
+    }
+
+    @if $breakpoint ==tab-land {
+        @media only screen and(max-width:71.875em) {
+            @content; // 1150px, 1150px/16px = 71.875em
+        }
+    }
+
+
+}

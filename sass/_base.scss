@@ -1,0 +1,71 @@
+//COLOR VARIABLES
+$color-white: #fff;
+$color-primary-blue: hsl(246, 80%, 60%);
+$color-primary-soft-blue-play: hsl(195, 74%, 62%);
+$color-primary-light-red-work: hsl(15, 100%, 70%);
+$color-primary-light-red-study: hsl(348, 100%, 68%);
+$color-primary-lime-green-exercise: hsl(145, 58%, 55%);
+$color-primary-violet-social: hsl(264, 64%, 52%);
+$color-primary-soft-orange-selfcare: hsl(43, 84%, 65%);
+
+$color-neutral-dark-blue-1: hsl(235, 46%, 20%);
+$color-neutral-dark-blue-2: hsl(226, 43%, 10%);
+$color-neutral-desaturated-blue: hsl(235, 45%, 61%);
+$color-neutral-pale-blue: hsl(236, 100%, 87%);
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    //width > 1150px
+    font-size: 62.5%; // 1rem=10px //10px/16px = 0.625
+
+    @include respond (tab-land) {
+        //width < 1150px
+        font-size: 56.25%; // 1rem=9px 9px/16px = 56.25%
+    }
+
+    @include respond (tab-land-smaller) {
+        //width < 1016px
+        font-size: 50%; // 1rem=8px 8px/16px = 50%
+    }
+
+    @include respond (tab-port) {
+        //width < 916px
+        font-size: 43.75%; // 1rem=7px 7px/16px = 43.75%
+    }
+
+    @include respond (tab-port-smaller) {
+        //width < 800px
+        font-size: 40.6%; // 1rem=6.5px 6.5px/16px = 40.6%
+    }
+
+
+    @include respond (phone) {
+        // font-size: 40.6%;
+        font-size: 37.5%; // 1rem=6px 6px/16px = 37.5%
+    }
+
+    @include respond (phone-smallest) {
+        font-size: 31.25%; // 1rem=5px 5px/16px = 31.25%
+    }
+
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: $color-white;
+    background-color: $color-neutral-dark-blue-2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
